@@ -1,5 +1,7 @@
 /// @ref core
 /// @file glm/detail/func_vector_relational.inl
+#pragma warning(push)
+#pragma warning(disable : 4701) // potentially uninitialized local variable used
 
 #include "compute_vector_relational.hpp"
 
@@ -103,3 +105,5 @@ namespace glm
 #if GLM_ARCH != GLM_ARCH_PURE && GLM_HAS_UNRESTRICTED_UNIONS
 #	include "func_vector_relational_simd.inl"
 #endif
+
+#pragma warning(pop)
