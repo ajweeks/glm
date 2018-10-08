@@ -1,5 +1,3 @@
-#pragma warning(push)
-#pragma warning(disable : 4701) // potentially uninitialized local variable used
 namespace glm
 {
 	template<length_t L, typename T, qualifier Q>
@@ -87,5 +85,3 @@ namespace glm
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_vector_relational_simd.inl"
 #endif
-
-#pragma warning(pop)
